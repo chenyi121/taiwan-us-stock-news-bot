@@ -34,7 +34,7 @@ else:
             n['summary'] = summary
             n['trend'] = trend
             enriched.append(n)
-            msg = f"🌐 {n.get('market')}｜{n.get('source')}\n{title}\n🧠 摘要：{summary}\n📊 趨勢判斷：{trend}\n🔗 {n.get('url')}"]
+            msg = f"🌐 {n.get('market')}｜{n.get('source')}\n{title}\n🧠 摘要：{summary}\n📊 趨勢判斷：{trend}\n🔗 {n.get('url')}"
             send_text(msg)
         # 產生報告檔案（可選）
         try:
