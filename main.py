@@ -8,6 +8,7 @@ from report_generator import generate_daily_report
 
 LINE_CHANNEL_ACCESS_TOKEN = os.getenv('LINE_CHANNEL_ACCESS_TOKEN')
 USER_ID = os.getenv('USER_ID')
+print(f"USER_ID 值為：{USER_ID}，型別：{type(USER_ID)}")
 
 if not LINE_CHANNEL_ACCESS_TOKEN or not USER_ID:
     print('請先在環境變數設定 LINE_CHANNEL_ACCESS_TOKEN 與 USER_ID')
